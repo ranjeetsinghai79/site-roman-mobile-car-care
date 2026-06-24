@@ -2,109 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "slate",
-  niche: "auto-detailing",
-  name: "Apex Auto Detailing",
-  tagline: "Every Detail. Perfected.",
-  phone: "(555) 012-3456",
-  phoneHref: "tel:+15550123456",
-  email: "hello@apexautodetail.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Modesto", "Manteca", "Pleasanton", "Livermore"],
-  license: "CA Business #012345",
-  since: "2014",
-  google_rating: "5.0",
-  review_count: "276",
-  emergency: false,
-  social: { google: "https://google.com", yelp: "https://yelp.com", facebook: "https://facebook.com" },
-},
+    name: "Roman Mobile Car Care",
+    tagline: "Your Car Deserves The Best",
+    phone: "(727) 902-1969",
+    phoneHref: "tel:+17279021969",
+    email: "romanmobilecarcare@gmail.com",
+    address: "Tampa Bay Area",
+    city: "Tampa",
+    serviceAreas: ["Tampa Bay Area"],
+    license: "Licensed & Insured",
+    since: "2015",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: false,
+    theme: "ocean",
+    niche: "auto-detailing",
+  },
 
   services: [
-  { icon: "sparkles", title: "Ceramic Coating", desc: "9H hardness nano-ceramic protection. 5-year warranty. Hydrophobic, scratch-resistant, showroom shine that lasts years.", urgent: false },
-  { icon: "star", title: "Paint Correction", desc: "Multi-stage machine polishing removes swirls, scratches, and oxidation. Restore your car's true shine.", urgent: false },
-  { icon: "zap", title: "Full Detail Package", desc: "Interior + exterior deep clean. Clay bar, hand wax, leather conditioning, engine bay. The full treatment.", urgent: false },
-  { icon: "droplets", title: "Interior Detail", desc: "Deep extraction shampoo, leather cleaning and conditioning, dashboard and trim dressing. Fresh from the inside.", urgent: false },
-  { icon: "shield", title: "PPF (Paint Film)", desc: "Self-healing urethane film for bumpers, hoods, mirrors. Invisible protection against rock chips and scratches.", urgent: false },
-  { icon: "sun", title: "Window Tinting", desc: "Premium ceramic tint. Heat rejection, UV protection, privacy. Legal limits honored. Lifetime warranty.", urgent: false },
-],
+    { icon: "truck", title: "Mobile Detailing", desc: "We bring professional auto detailing services directly to your doorstep, saving you time and hassle.", urgent: false },
+    { icon: "sparkles", title: "Interior & Exterior Detail", desc: "Comprehensive cleaning and restoration for both the inside and outside of your vehicle, making it look new.", urgent: false },
+    { icon: "shield-check", title: "Ceramic Coating", desc: "Long-lasting paint protection that provides superior gloss, hydrophobicity, and scratch resistance.", urgent: false },
+    { icon: "wrench", title: "Paint Correction", desc: "Expert removal of swirl marks, scratches, and imperfections to restore your vehicle's paint to a flawless finish.", urgent: false },
+    { icon: "thermometer", title: "Headlight Restoration", desc: "Restore clarity and brightness to foggy or yellowed headlights, improving visibility and aesthetics.", urgent: false },
+    { icon: "heart", title: "Pet Hair Removal", desc: "Thorough and effective removal of stubborn pet hair from all interior surfaces, leaving your car fresh.", urgent: false }
+  ],
 
   testimonials: [
-  { name: "Marcus J.", location: "Tracy, CA", stars: 5, text: "Ceramic coated my BMW last year. Water beads off like nothing. Hasn't been to a car wash since. Worth every single dollar." },
-  { name: "Tyler R.", location: "Pleasanton, CA", stars: 5, text: "Paint correction on my 10-year-old Mustang made it look brand new. The swirl marks are completely gone. Insane transformation." },
-  { name: "David K.", location: "Stockton, CA", stars: 5, text: "Full interior detail after a road trip disaster. Kids had destroyed it. Looks like I just drove it off the lot. Literally perfect." },
-],
+    { name: "Jim Goudy", location: "Tampa", stars: 5, text: "Roman detailed and ceramic coated my SUV, and I couldn't be happier. He was courteous, professional, and didn't short-cut anything, even explaining how to maximize the coating's life. The job was done professionally with quality products. Highly recommend Roman for his diligence and care!" },
+    { name: "Benjamin Brener", location: "St. Petersburg", stars: 5, text: "Roman was amazing! Our 85lb puppy sheds everywhere, leaving fur in every crack. After a few hours of hard work, the car looks brand new! I'm no longer embarrassed about my vehicle's interior. If you need amazing detailing, don't hesitate to call Roman!" },
+    { name: "Somer Bishop", location: "Clearwater", stars: 5, text: "Roman detailed my car's interior today, and I’m beyond impressed. The full treatment, including ozone and steam cleaning, made it feel brand new. He was thorough, hardworking, and paid attention to every detail. My car feels super clean and refreshed. Highly recommend Roman for quality work!" }
+  ],
 
   trustBadges: [
-  "Ceramic Pro Certified", "Paint Correction Specialists", "5-Star Google Rated",
-  "5-Year Ceramic Warranty", "Mobile Service Available", "Free Estimates"
-],
+    "Mobile Service", "Quality Products", "Experienced Detailers", "Customer Satisfaction", "Flexible Scheduling"
+  ],
 
   stats: [
-  {
-    "value": 5,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 1380,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 12,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 500, label: "Vehicles Detailed", suffix: "+", decimals: 0 },
+    { value: 8, label: "Years Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI books detailing appointments, sends reminders, and collects post-service reviews via call, text, or WhatsApp. Zero missed bookings."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "clock", title: "Convenient Mobile Service", desc: "We come to you, saving you time and hassle with our on-site detailing." },
+    { icon: "dollar-sign", title: "Transparent Pricing", desc: "Clear, upfront quotes with no hidden fees, so you know exactly what to expect." },
+    { icon: "award", title: "Certified Professionals", desc: "Our detailers are highly trained and experienced, ensuring top-quality results." },
+    { icon: "thumbs-up", title: "Satisfaction Guaranteed", desc: "We stand behind our work and ensure you're completely happy with the results." },
+    { icon: "phone", title: "Easy Booking", desc: "Schedule your detailing service quickly and conveniently online or by phone." },
+    { icon: "truck", title: "Fully Equipped", desc: "Our mobile units are stocked with premium tools and products for superior detailing." }
+  ],
 
-  formServiceOptions: [
-  "Ceramic Coating",
-  "Paint Correction",
-  "Full Detail Package",
-  "Interior Detail",
-  "PPF (Paint Film)",
-  "Window Tinting"
-],
+  formServiceOptions: ["Mobile Detailing", "Interior & Exterior Detail", "Ceramic Coating", "Paint Correction", "Headlight Restoration", "Pet Hair Removal"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
